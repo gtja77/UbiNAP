@@ -70,7 +70,7 @@ function getDistance(lat1, lon1, lat2, lon2) {
 }
 
 // Cargar el archivo GeoJSON
-fetch('./json/naps_ISP_19052025.geojson')
+fetch('https://raw.githubusercontent.com/gtja77/UbiNAP/refs/heads/Ubi/script5.js')
     .then(response => {
         if (!response.ok) {
             throw new Error('No se pudo cargar el archivo GeoJSON: ' + response.statusText);
@@ -163,4 +163,5 @@ L.Control.geocoder({
         item.marker.openPopup();
     });
 })
+
 .addTo(map);
